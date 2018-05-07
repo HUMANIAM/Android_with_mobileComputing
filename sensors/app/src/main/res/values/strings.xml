@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">sensors</string>
+    <string-array name="mobileSensors">
+        <item>Click Here To Select Sensor</item>
+        <item>Accelerometer</item>
+        <item>Gyroscope</item>
+        <item>GPS</item>
+        <item>Compass</item>
+        <item>Barometer</item>
+    </string-array>
+</resources>
