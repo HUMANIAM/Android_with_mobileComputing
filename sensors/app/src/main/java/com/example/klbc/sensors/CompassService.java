@@ -105,9 +105,9 @@ public class CompassService extends Service implements SensorEventListener {
         mSensorManager.getOrientation(rotationMatrix, orientationAngles);
 
         //read orientation around axis
-        float azimuth = sensorEvent.values[0];
-        float pitch = sensorEvent.values[1];
-        float roll = sensorEvent.values[2];
+        float azimuth = orientationAngles[0];
+        float pitch = orientationAngles[1];
+        float roll = orientationAngles[2];
 
         long timestmp = sensorEvent.timestamp;
         if ((System.currentTimeMillis() - lastUpdate) > 100) {              //intervals to log readings
